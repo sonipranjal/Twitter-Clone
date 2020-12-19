@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const Twitter = require("./api/helpers/twitter");
-const port = 3000;
+const port = process.env.PORT || 3000;
 require("dotenv").config();
 
 const twitter = new Twitter();
